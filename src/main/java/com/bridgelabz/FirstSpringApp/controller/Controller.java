@@ -14,4 +14,9 @@ public class Controller {
     public String hello(@RequestParam String name) {
         return "Hello "+ name + " from Bridgelabz " ;
     }
+
+    @RequestMapping(value = "/hello", method = RequestMethod.GET)
+    public String pathhello(@PathVariable String name) {
+        return "Hello "+ name + " from Bridgelabz " ;
+    }
 }
